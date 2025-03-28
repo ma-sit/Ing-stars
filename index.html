@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guide complet sur les métiers de l'ingénieur, formations, écoles et débouchés professionnels">
+  <meta name="keywords" content="ingénieur, métiers, formation, écoles, carrière, génie civil, informatique, mécanique, électronique">
+  <title>Devenir Ingénieur: Guide Complet | IngéFutur</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Schema.org markup for Google -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "IngéFutur - Guide de la profession d'ingénieur",
+      "url": "https://www.ingefutur.fr",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.ingefutur.fr/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="theme-toggle">
+    <button id="light-mode" class="active"><i class="fas fa-sun"></i></button>
+    <button id="dark-mode"><i class="fas fa-moon"></i></button>
+  </div>
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.svg" alt="IngéFutur Logo">
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="metiers.html">Métiers</a></li>
+          <li><a href="formation.html">Formation</a></li>
+          <li><a href="ecoles.html">Écoles</a></li>
+          <li><a href="debouches.html">Débouchés</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="emploi.html">Emploi</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="search-container">
+          <form id="search-form">
+            <input type="text" placeholder="Rechercher...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+        <div class="auth-buttons">
+          <a href="membre.html" class="btn btn-login"><i class="fas fa-user"></i> Connexion</a>
+        </div>
+        <button class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-slider">
+    <div class="container">
+      <div class="slider-container">
+        <div class="slide active">
+          <div class="slide-content">
+            <h1>Construisez l'avenir avec une carrière d'ingénieur</h1>
+            <p>Découvrez tous les parcours possibles et trouvez la spécialité qui vous correspond</p>
+            <div class="cta-buttons">
+              <a href="metiers.html" class="btn btn-primary">Explorer les métiers</a>
+              <a href="#quiz-section" class="btn btn-secondary">Faire le quiz d'orientation</a>
+            </div>
+          </div>
+          <div class="slide-image">
+            <img src="img/photos/hero-1.jpg" alt="Ingénieurs en action">
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <h1>100+ écoles d'ingénieurs en France</h1>
+            <p>Trouvez l'établissement qui correspond à votre projet professionnel</p>
+            <div class="cta-buttons">
+              <a href="ecoles.html" class="btn btn-primary">Comparer les écoles</a>
+              <a href="formation.html" class="btn btn-secondary">Découvrir les formations</a>
+            </div>
+          </div>
+          <div class="slide-image">
+            <img src="img/photos/hero-2.jpg" alt="Campus d'école d'ingénieurs">
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <h1>Construisez votre carrière dès maintenant</h1>
+            <p>Stages, alternances et offres d'emploi pour ingénieurs à tous niveaux</p>
+            <div class="cta-buttons">
+              <a href="emploi.html" class="btn btn-primary">Voir les offres</a>
+              <a href="debouches.html" class="btn btn-secondary">Explorer les secteurs</a>
+            </div>
+          </div>
+          <div class="slide-image">
+            <img src="img/photos/hero-3.jpg" alt="Ingénieurs en réunion de travail">
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+        <div class="slider-dots">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+        </div>
+        <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-section">
+    <div class="container">
+      <h2>L'ingénierie en chiffres</h2>
+      <div class="stats-container">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+          <div class="stat-counter" data-target="40000">0</div>
+          <div class="stat-label">Ingénieurs diplômés chaque année</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-university"></i>
+          </div>
+          <div class="stat-counter" data-target="210">0</div>
+          <div class="stat-label">Écoles d'ingénieurs</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="stat-counter" data-target="96">0</div>
+          <div class="stat-label">% de taux d'insertion</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-euro-sign"></i>
+          </div>
+          <div class="stat-counter" data-target="45000">0</div>
+          <div class="stat-label">Salaire moyen à l'embauche (€)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-section">
+    <div class="container">
+      <h2>À la une</h2>
+      <div class="featured-grid">
+        <div class="featured-card">
+          <div class="card-icon"><i class="fas fa-rocket"></i></div>
+          <h3>Spécialités émergentes</h3>
+          <p>Intelligence artificielle, robotique, énergie verte : découvrez les nouveaux métiers d'ingénieurs</p>
+          <a href="metiers.html#emergents" class="btn-text">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="featured-card">
+          <div class="card-icon"><i class="fas fa-globe-europe"></i></div>
+          <h3>Carrières internationales</h3>
+          <p>Comment préparer votre parcours pour une carrière d'ingénieur à l'international</p>
+          <a href="debouches.html#international" class="btn-text">Explorer <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="featured-card">
+          <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Évolution professionnelle</h3>
+          <p>Les trajectoires de carrière possibles après 5, 10 et 15 ans d'expérience</p>
+          <a href="debouches.html#evolution" class="btn-text">Découvrir <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="featured-card">
+          <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+          <h3>Innovation et entrepreneuriat</h3>
+          <p>Ces ingénieurs qui ont créé leur startup : témoignages et conseils</p>
+          <a href="blog.html#entrepreneuriat" class="btn-text">Lire les témoignages <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials-section">
+    <div class="container">
+      <h2>Témoignages d'ingénieurs</h2>
+      <div class="testimonials-container">
+        <div class="testimonial-card active">
+          <div class="testimonial-image">
+            <img src="img/photos/testimonial-1.jpg" alt="Sophie Martin">
+          </div>
+          <div class="testimonial-content">
+            <p>"Après ma prépa MP, j'ai intégré Centrale Nantes. Aujourd'hui je travaille sur des projets innovants dans le domaine de l'énergie solaire. C'est passionnant de contribuer à la transition énergétique."</p>
+            <div class="testimonial-author">
+              <h4>Sophie Martin</h4>
+              <p>Ingénieure en génie électrique, promotion 2019</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-image">
+            <img src="img/photos/testimonial-2.jpg" alt="Thomas Dubois">
+          </div>
+          <div class="testimonial-content">
+            <p>"J'ai obtenu mon diplôme d'ingénieur en informatique via l'alternance. Cette expérience m'a permis d'être immédiatement opérationnel et d'évoluer rapidement vers un poste de lead developer."</p>
+            <div class="testimonial-author">
+              <h4>Thomas Dubois</h4>
+              <p>Ingénieur en développement logiciel, promotion 2017</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-image">
+            <img src="img/photos/testimonial-3.jpg" alt="Amel Benali">
+          </div>
+          <div class="testimonial-content">
+            <p>"Après mon DUT, j'ai intégré une école d'ingénieurs en admission parallèle. Aujourd'hui je suis responsable de projets BIM dans un grand groupe de construction. La diversité des chantiers est ce que j'aime le plus."</p>
+            <div class="testimonial-author">
+              <h4>Amel Benali</h4>
+              <p>Ingénieure en génie civil, promotion 2015</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-controls">
+        <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+        <div class="testimonial-dots">
+          <span class="dot active" data-testimonial="0"></span>
+          <span class="dot" data-testimonial="1"></span>
+          <span class="dot" data-testimonial="2"></span>
+        </div>
+        <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="quiz-section" class="quiz-preview">
+    <div class="container">
+      <div class="quiz-content">
+        <h2>Quelle spécialité d'ingénieur vous correspond ?</h2>
+        <p>Répondez à notre quiz interactif pour découvrir les domaines de l'ingénierie qui pourraient vous convenir selon votre profil, vos compétences et vos centres d'intérêt.</p>
+        <a href="metiers.html#quiz" class="btn btn-primary">Commencer le quiz</a>
+      </div>
+      <div class="quiz-image">
+        <img src="img/illustrations/quiz-illustration.svg" alt="Quiz d'orientation">
+      </div>
+    </div>
+  </section>
+
+  <section class="latest-news">
+    <div class="container">
+      <div class="section-header">
+        <h2>Derniers articles</h2>
+        <a href="blog.html" class="btn-text">Voir tous les articles <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card">
+          <div class="blog-img">
+            <img src="img/photos/blog-1.jpg" alt="Intelligence artificielle">
+            <div class="blog-category">Technologie</div>
+          </div>
+          <div class="blog-content">
+            <h3><a href="blog.html#article1">L'intelligence artificielle révolutionne le métier d'ingénieur</a></h3>
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> 15 mars 2023</span>
+              <span><i class="fas fa-user"></i> Marie Dupont</span>
+            </div>
+            <p>Comment les outils d'IA transforment les méthodes de travail et créent de nouvelles opportunités...</p>
+            <a href="blog.html#article1" class="btn-text">Lire la suite <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-img">
+            <img src="img/photos/blog-2.jpg" alt="Formations">
+            <div class="blog-category">Formation</div>
+          </div>
+          <div class="blog-content">
+            <h3><a href="blog.html#article2">Les formations d'ingénieurs s'adaptent aux enjeux climatiques</a></h3>
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> 28 février 2023</span>
+              <span><i class="fas fa-user"></i> Paul Renard</span>
+            </div>
+            <p>De nouveaux modules obligatoires sur le développement durable font leur apparition dans les cursus...</p>
+            <a href="blog.html#article2" class="btn-text">Lire la suite <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-img">
+            <img src="img/photos/blog-3.jpg" alt="Débouchés">
+            <div class="blog-category">Carrière</div>
+          </div>
+          <div class="blog-content">
+            <h3><a href="blog.html#article3">Top 10 des secteurs qui recrutent le plus d'ingénieurs en 2023</a></h3>
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> 10 février 2023</span>
+              <span><i class="fas fa-user"></i> Jean Mercier</span>
+            </div>
+            <p>Analyse des tendances du marché de l'emploi et des secteurs les plus dynamiques pour les ingénieurs...</p>
+            <a href="blog.html#article3" class="btn-text">Lire la suite <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="job-preview">
+    <div class="container">
+      <div class="section-header">
+        <h2>Offres d'emploi à la une</h2>
+        <a href="emploi.html" class="btn-text">Voir toutes les offres <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="job-grid">
+        <div class="job-card">
+          <div class="job-header">
+            <div class="company-logo">
+              <img src="img/logos/company-1.svg" alt="TechInnov">
+            </div>
+            <div class="job-type">CDI</div>
+          </div>
+          <h3>Ingénieur R&D Robotique</h3>
+          <p class="company-name">TechInnov</p>
+          <p class="job-location"><i class="fas fa-map-marker-alt"></i> Lyon</p>
+          <div class="job-tags">
+            <span>Robotique</span>
+            <span>Intelligence Artificielle</span>
+            <span>C++</span>
+          </div>
+          <a href="emploi.html#job1" class="btn btn-secondary">Voir l'offre</a>
+        </div>
+        <div class="job-card">
+          <div class="job-header">
+            <div class="company-logo">
+              <img src="img/logos/company-2.svg" alt="GreenEnergy">
+            </div>
+            <div class="job-type">Alternance</div>
+          </div>
+          <h3>Ingénieur énergies renouvelables</h3>
+          <p class="company-name">GreenEnergy</p>
+          <p class="job-location"><i class="fas fa-map-marker-alt"></i> Paris</p>
+          <div class="job-tags">
+            <span>Éolien</span>
+            <span>Photovoltaïque</span>
+            <span>Simulation</span>
+          </div>
+          <a href="emploi.html#job2" class="btn btn-secondary">Voir l'offre</a>
+        </div>
+        <div class="job-card">
+          <div class="job-header">
+            <div class="company-logo">
+              <img src="img/logos/company-3.svg" alt="DataPlus">
+            </div>
+            <div class="job-type">Stage</div>
+          </div>
+          <h3>Ingénieur Data Science</h3>
+          <p class="company-name">DataPlus</p>
+          <p class="job-location"><i class="fas fa-map-marker-alt"></i> Toulouse</p>
+          <div class="job-tags">
+            <span>Machine Learning</span>
+            <span>Python</span>
+            <span>TensorFlow</span>
+          </div>
+          <a href="emploi.html#job3" class="btn btn-secondary">Voir l'offre</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>Restez informé</h2>
+        <p>Inscrivez-vous à notre newsletter pour recevoir les dernières actualités sur les métiers d'ingénieur, les écoles et les opportunités de carrière.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Votre adresse email" required>
+            <button type="submit" class="btn btn-primary">S'inscrire</button>
+          </div>
+          <div class="form-consent">
+            <input type="checkbox" id="consent" required>
+            <label for="consent">J'accepte de recevoir la newsletter et confirme avoir lu la <a href="privacy.html">politique de confidentialité</a></label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="img/logo-white.svg" alt="IngéFutur Logo">
+          <p>Votre guide complet pour une carrière d'ingénieur réussie</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="metiers.html">Métiers</a></li>
+              <li><a href="formation.html">Formation</a></li>
+              <li><a href="ecoles.html">Écoles</a></li>
+              <li><a href="debouches.html">Débouchés</a></li>
+              <li><a href="ressources.html">Ressources</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="emploi.html">Emploi</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Informations</h3>
+            <ul>
+              <li><a href="about.html">À propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="sitemap.html">Plan du site</a></li>
+              <li><a href="legal.html">Mentions légales</a></li>
+              <li><a href="privacy.html">Politique de confidentialité</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Ressources</h3>
+            <ul>
+              <li><a href="ressources.html#guides">Guides de préparation</a></li>
+              <li><a href="ressources.html#outils">Outils d'orientation</a></li>
+              <li><a href="ressources.html#livres">Bibliographie</a></li>
+              <li><a href="ressources.html#liens">Liens utiles</a></li>
+              <li><a href="ressources.html#evenements">Salons et forums</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p><i class="fas fa-envelope"></i> contact@ingefutur.fr</p>
+          <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Avenue des Ingénieurs, 75001 Paris</p>
+          <a href="contact.html" class="btn btn-outline">Nous contacter</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 IngéFutur. Tous droits réservés.</p>
+        <div class="footer-bottom-links">
+          <a href="legal.html">Mentions légales</a>
+          <a href="privacy.html">Politique de confidentialité</a>
+          <a href="sitemap.html">Plan du site</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="back-to-top" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

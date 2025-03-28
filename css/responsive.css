@@ -1,0 +1,385 @@
+/* 
+ * RESPONSIVE.CSS
+ * Styles responsifs pour le site IngéFutur
+ */
+
+/* Grand écran et desktop (≥1200px) */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Tablet et petits desktops (≥992px et <1200px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .featured-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablets (≥768px et <992px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  /* Header & Navigation */
+  .search-container input {
+    width: 150px;
+  }
+
+  /* Hero Slider */
+  .slider-container {
+    height: auto;
+  }
+
+  .slide {
+    position: relative;
+    flex-direction: column;
+    height: auto;
+    padding: var(--spacing-lg) 0;
+  }
+
+  .slide-content {
+    padding-right: 0;
+    margin-bottom: var(--spacing-xl);
+    text-align: center;
+  }
+
+  .slide-content h1, .slide-content p {
+    text-align: center;
+  }
+  
+  .cta-buttons {
+    justify-content: center;
+  }
+
+  .slide-image {
+    justify-content: center;
+  }
+
+  /* Sections grid */
+  .featured-grid, 
+  .stats-container, 
+  .blog-grid, 
+  .job-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Quiz preview */
+  .quiz-preview .container {
+    flex-direction: column;
+  }
+
+  .quiz-content {
+    padding-right: 0;
+    margin-bottom: var(--spacing-xl);
+    text-align: center;
+  }
+
+  .quiz-image {
+    justify-content: center;
+  }
+
+  /* Testimonials */
+  .testimonial-card {
+    flex-direction: column;
+  }
+
+  .testimonial-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .testimonial-content {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .footer-logo {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .footer-logo img {
+    margin: 0 auto var(--spacing-md);
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-column h3::after,
+  .footer-contact h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer-column, 
+  .footer-contact {
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-bottom-links {
+    margin-top: var(--spacing-md);
+  }
+
+  .footer-bottom-links a:first-child {
+    margin-left: 0;
+  }
+}
+
+/* Mobile (< 768px) */
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  section {
+    padding: var(--spacing-xl) 0;
+  }
+
+  /* Header & Navigation */
+  header .container {
+    padding: 0.5rem var(--spacing-md);
+  }
+
+  .logo img {
+    height: 2rem;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    background-color: var(--white);
+    box-shadow: var(--shadow-lg);
+    z-index: var(--z-modal);
+    transition: var(--transition-base);
+    padding-top: 5rem;
+  }
+
+  .main-nav.active {
+    left: 0;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-nav ul li {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-nav ul li a {
+    display: block;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .search-container {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+    z-index: var(--z-modal);
+  }
+
+  .mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+
+  .auth-buttons {
+    margin-right: var(--spacing-md);
+  }
+
+  /* Hero slider */
+  .hero-slider {
+    padding: 5rem 0 2rem;
+  }
+  
+  .slider-container {
+    height: auto;
+  }
+
+  .slide {
+    position: relative;
+    flex-direction: column;
+    height: auto;
+    padding: var(--spacing-md) 0;
+  }
+
+  .slide-content {
+    padding-right: 0;
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons .btn {
+    margin-right: 0;
+    margin-bottom: var(--spacing-sm);
+    width: 100%;
+  }
+
+  .slide-image {
+    justify-content: center;
+  }
+
+  .slide-image img {
+    max-height: 250px;
+  }
+
+  /* Grid layouts */
+  .stats-container,
+  .featured-grid,
+  .blog-grid,
+  .job-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  /* Section headers */
+  .section-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-header h2 {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .section-header h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Testimonials */
+  .testimonial-card {
+    flex-direction: column;
+  }
+
+  .testimonial-image {
+    width: 100%;
+    height: 150px;
+  }
+
+  .testimonial-content {
+    width: 100%;
+    padding: var(--spacing-md);
+  }
+
+  /* Newsletter */
+  .newsletter-form .form-group {
+    flex-direction: column;
+  }
+
+  .newsletter-form input {
+    border-radius: var(--radius-md);
+    border-right: 1px solid var(--gray-light);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .newsletter-form button {
+    border-radius: var(--radius-md);
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-column, .footer-contact {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .footer-contact p {
+    justify-content: center;
+  }
+
+  /* Back to top */
+  .back-to-top {
+    bottom: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  /* Theme toggle */
+  #theme-toggle {
+    top: auto;
+    bottom: 1rem;
+    left: 1rem;
+    right: auto;
+  }
+}

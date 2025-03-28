@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Découvrez les différentes spécialités et métiers de l'ingénieur, les compétences requises et l'environnement de travail">
+  <meta name="keywords" content="métiers ingénieur, génie civil, informatique, mécanique, électrique, chimique, spécialités ingénieur">
+  <title>Les Métiers de l'Ingénieur | IngéFutur</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Schema.org markup for Google -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Les Métiers de l'Ingénieur",
+      "description": "Découvrez les différentes spécialités d'ingénieur, leurs particularités, et les compétences requises pour exercer ces métiers."
+    }
+  </script>
+</head>
+<body>
+  <div id="theme-toggle">
+    <button id="light-mode" class="active"><i class="fas fa-sun"></i></button>
+    <button id="dark-mode"><i class="fas fa-moon"></i></button>
+  </div>
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.svg" alt="IngéFutur Logo">
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="metiers.html" class="active">Métiers</a></li>
+          <li><a href="formation.html">Formation</a></li>
+          <li><a href="ecoles.html">Écoles</a></li>
+          <li><a href="debouches.html">Débouchés</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="emploi.html">Emploi</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="search-container">
+          <form id="search-form">
+            <input type="text" placeholder="Rechercher...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+        <div class="auth-buttons">
+          <a href="membre.html" class="btn btn-login"><i class="fas fa-user"></i> Connexion</a>
+        </div>
+        <button class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html">Accueil</a> &gt; <span>Métiers</span>
+      </div>
+      <h1>Les Métiers de l'Ingénieur</h1>
+      <p class="sub-heading">Découvrez les différentes spécialités et leurs particularités</p>
+    </div>
+  </section>
+
+  <section class="metiers-intro">
+    <div class="container">
+      <div class="intro-content">
+        <div class="intro-text">
+          <h2>Qu'est-ce qu'un ingénieur ?</h2>
+          <p>Un ingénieur est un professionnel qui utilise des connaissances scientifiques, mathématiques et techniques pour concevoir, améliorer et mettre en œuvre des solutions à des problèmes complexes. Son rôle est de transformer des idées et des concepts en réalités concrètes, en tenant compte des contraintes techniques, économiques, environnementales et sociétales.</p>
+          <p>Le métier d'ingénieur se décline en de nombreuses spécialités, chacune offrant des perspectives de carrière variées dans des secteurs divers. Que ce soit dans la construction, l'informatique, l'énergie, l'agroalimentaire ou la santé, les ingénieurs sont des acteurs clés de l'innovation et du progrès technique.</p>
+          <p>Sur cette page, vous découvrirez les principales spécialités du métier d'ingénieur, leurs particularités, les compétences requises et les environnements de travail associés.</p>
+        </div>
+        <div class="intro-stats">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <div class="stat-counter" data-target="850000">0</div>
+            <div class="stat-label">Ingénieurs en activité en France</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-industry"></i>
+            </div>
+            <div class="stat-counter" data-target="15">0</div>
+            <div class="stat-label">Spécialités principales</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-microscope"></i>
+            </div>
+            <div class="stat-counter" data-target="38">0</div>
+            <div class="stat-label">% en R&D et conception</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="stat-counter" data-target="42800">0</div>
+            <div class="stat-label">Salaire moyen annuel (€)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="specialities-nav">
+    <div class="container">
+      <h2>Explorer les spécialités</h2>
+      <div class="nav-tabs">
+        <button class="tab-btn active" data-category="all">Toutes les spécialités</button>
+        <button class="tab-btn" data-category="numerique">Numérique</button>
+        <button class="tab-btn" data-category="industrie">Industrie</button>
+        <button class="tab-btn" data-category="construction">Construction</button>
+        <button class="tab-btn" data-category="environnement">Environnement & Énergie</button>
+        <button class="tab-btn" data-category="vivant">Sciences du vivant</button>
+      </div>
+      <div class="specialities-grid">
+        <!-- Spécialité: Informatique -->
+        <div class="speciality-card" data-categories="numerique">
+          <div class="card-header">
+            <img src="img/illustrations/informatique.svg" alt="Ingénieur Informatique">
+            <h3>Ingénieur en Informatique</h3>
+          </div>
+          <div class="card-content">
+            <p class="card-description">Conception, développement et maintien de logiciels, systèmes d'information et infrastructures informatiques.</p>
+            <div class="card-details">
+              <div class="detail-item">
+                <h4>Missions principales</h4>
+                <ul>
+                  <li>Développement de logiciels et applications</li>
+                  <li>Conception d'architectures informatiques</li>
+                  <li>Gestion de projets techniques</li>
+                  <li>Administration de systèmes et réseaux</li>
+                </ul>
+              </div>
+              <div class="detail-item">
+                <h4>Compétences clés</h4>
+                <div class="skills-tags">
+                  <span class="tag">Programmation</span>
+                  <span class="tag">Architecture logicielle</span>
+                  <span class="tag">Bases de données</span>
+                  <span class="tag">Réseaux</span>
+                  <span class="tag">Cybersécurité</span>
+                  <span class="tag">DevOps</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <h4>Environnement de travail</h4>
+                <p>Entreprises de services numériques (ESN), startups, grands groupes, administrations publiques. Travail en équipe, méthodologies agiles, télétravail possible.</p>
+              </div>
+              <div class="detail-item">
+                <h4>Salaire moyen</h4>
+                <div class="salary-range">
+                  <span class="salary-min">35 000 €</span>
+                  <div class="salary-bar">
+                    <div class="salary-progress" style="width: 65%;"></div>
+                  </div>
+                  <span class="salary-max">80 000 €</span>
+                </div>
+                <p class="salary-info">Débutant: 35-40k€ | Confirmé: 45-60k€ | Expert: 60-80k€+</p>
+              </div>
+            </div>
+            <a href="#informatique" class="btn btn-secondary btn-more">En savoir plus</a>
+          </div>
+        </div>
+
+        <!-- Spécialité: Génie Civil -->
+        <div class="speciality-card" data-categories="construction">
+          <div class="card-header">
+            <img src="img/illustrations/genie-civil.svg" alt="Ingénieur Génie Civil">
+            <h3>Ingénieur en Génie Civil</h3>
+          </div>
+          <div class="card-content">
+            <p class="card-description">Conception, construction et maintenance d'infrastructures et de bâtiments : ponts, routes, immeubles, barrages, etc.</p>
+            <div class="card-details">
+              <div class="detail-item">
+                <h4>Missions principales</h4>
+                <ul>
+                  <li>Conception et calcul de structures</li>
+                  <li>Supervision de chantiers</li>
+                  <li>Études techniques et environnementales</li>
+                  <li>Gestion de projets d'infrastructure</li>
+                </ul>
+              </div>
+              <div class="detail-item">
+                <h4>Compétences clés</h4>
+                <div class="skills-tags">
+                  <span class="tag">Résistance des matériaux</span>
+                  <span class="tag">CAO/DAO</span>
+                  <span class="tag">BIM</span>
+                  <span class="tag">Mécanique des sols</span>
+                  <span class="tag">Gestion de projet</span>
+                  <span class="tag">Normes construction</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <h4>Environnement de travail</h4>
+                <p>Bureaux d'études, entreprises de BTP, collectivités territoriales, services de l'État. Alternance entre bureau et terrain, déplacements fréquents sur les chantiers.</p>
+              </div>
+              <div class="detail-item">
+                <h4>Salaire moyen</h4>
+                <div class="salary-range">
+                  <span class="salary-min">32 000 €</span>
+                  <div class="salary-bar">
+                    <div class="salary-progress" style="width: 60%;"></div>
+                  </div>
+                  <span class="salary-max">70 000 €</span>
+                </div>
+                <p class="salary-info">Débutant: 32-38k€ | Confirmé: 40-55k€ | Expert: 55-70k€+</p>
+              </div>
+            </div>
+            <a href="#genie-civil" class="btn btn-secondary btn-more">En savoir plus</a>
+          </div>
+        </div>
+
+        <!-- Spécialité: Mécanique -->
+        <div class="speciality-card" data-categories="industrie">
+          <div class="card-header">
+            <img src="img/illustrations/mecanique.svg" alt="Ingénieur Mécanique">
+            <h3>Ingénieur Mécanique</h3>
+          </div>
+          <div class="card-content">
+            <p class="card-description">Conception, analyse et fabrication de systèmes mécaniques, de machines et de composants pour divers secteurs industriels.</p>
+            <div class="card-details">
+              <div class="detail-item">
+                <h4>Missions principales</h4>
+                <ul>
+                  <li>Conception de systèmes mécaniques</li>
+                  <li>Optimisation de processus industriels</li>
+                  <li>Simulation et essais</li>
+                  <li>Recherche et développement de nouveaux produits</li>
+                </ul>
+              </div>
+              <div class="detail-item">
+                <h4>Compétences clés</h4>
+                <div class="skills-tags">
+                  <span class="tag">CAO</span>
+                  <span class="tag">Modélisation 3D</span>
+                  <span class="tag">Calcul de structures</span>
+                  <span class="tag">Mécanique des fluides</span>
+                  <span class="tag">Thermodynamique</span>
+                  <span class="tag">Matériaux</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <h4>Environnement de travail</h4>
+                <p>Industries automobile, aéronautique, navale, ferroviaire, bureaux d'études, centres de recherche. Travail en équipe multidisciplinaire, projets internationaux.</p>
+              </div>
+              <div class="detail-item">
+                <h4>Salaire moyen</h4>
+                <div class="salary-range">
+                  <span class="salary-min">34 000 €</span>
+                  <div class="salary-bar">
+                    <div class="salary-progress" style="width: 63%;"></div>
+                  </div>
+                  <span class="salary-max">75 000 €</span>
+                </div>
+                <p class="salary-info">Débutant: 34-40k€ | Confirmé: 42-58k€ | Expert: 58-75k€+</p>
+              </div>
+            </div>
+            <a href="#mecanique" class="btn btn-secondary btn-more">En savoir plus</a>
+          </div>
+        </div>
+
+        <!-- Spécialité: Électrique -->
+        <div class="speciality-card" data-categories="industrie">
+          <div class="card-header">
+            <img src="img/illustrations/electrique.svg" alt="Ingénieur Électrique">
+            <h3>Ingénieur Électrique</h3>
+          </div>
+          <div class="card-content">
+            <p class="card-description">Conception, développement et maintenance de systèmes électriques, de la production à la distribution d'énergie.</p>
+            <div class="card-details">
+              <div class="detail-item">
+                <h4>Missions principales</h4>
+                <ul>
+                  <li>Conception de systèmes électriques</li>
+                  <li>Dimensionnement d'installations</li>
+                  <li>Automatisation industrielle</li>
+                  <li>Gestion de réseaux électriques</li>
+                </ul>
+              </div>
+              <div class="detail-item">
+                <h4>Compétences clés</h4>
+                <div class="skills-tags">
+                  <span class="tag">Électrotechnique</span>
+                  <span class="tag">Électronique</span>
+                  <span class="tag">Automatisme</span>
+                  <span class="tag">Réseaux électriques</span>
+                  <span class="tag">Normes électriques</span>
+                  <span class="tag">Smart grids</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <h4>Environnement de travail</h4>
+                <p>Producteurs d'énergie, industries, sociétés d'ingénierie, bureaux d'études, gestionnaires de réseaux. Interventions sur site, projets d'envergure internationale.</p>
+              </div>
+              <div class="detail-item">
+                <h4>Salaire moyen</h4>
+                <div class="salary-range">
+                  <span class="salary-min">33 000 €</span>
+                  <div class="salary-bar">
+                    <div class="salary-progress" style="width: 62%;"></div>
+                  </div>
+                  <span class="salary-max">72 000 €</span>
+                </div>
+                <p class="salary-info">Débutant: 33-39k€ | Confirmé: 40-55k€ | Expert: 55-72k€+</p>
+              </div>
+            </div>
+            <a href="#energie" class="btn btn-secondary btn-more">En savoir plus</a>
+          </div>
+        </div>
+
+        <!-- Spécialité: Agroalimentaire -->
+        <div class="speciality-card" data-categories="vivant">
+          <div class="card-header">
+            <img src="img/illustrations/agroalimentaire.svg" alt="Ingénieur Agroalimentaire">
+            <h3>Ingénieur Agroalimentaire</h3>
+          </div>
+          <div class="card-content">
+            <p class="card-description">Conception, production et contrôle de produits alimentaires, optimisation des procédés de fabrication et respect des normes sanitaires.</p>
+            <div class="card-details">
+              <div class="detail-item">
+                <h4>Missions principales</h4>
+                <ul>
+                  <li>Développement de nouveaux produits</li>
+                  <li>Gestion de production</li>
+                  <li>Contrôle qualité et sécurité alimentaire</li>
+                  <li>Optimisation des process</li>
+                </ul>
+              </div>
+              <div class="detail-item">
+                <h4>Compétences clés</h4>
+                <div class="skills-tags">
+                  <span class="tag">Biochimie</span>
+                  <span class="tag">Microbiologie</span>
+                  <span class="tag">HACCP</span>
+                  <span class="tag">Génie des procédés</span>
+                  <span class="tag">Formulation</span>
+                  <span class="tag">Normes sanitaires</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <h4>Environnement de travail</h4>
+                <p>Industries agroalimentaires, laboratoires R&D, organismes de contrôle, grande distribution. Contact avec la production, respect strict des règles d'hygiène.</p>
+              </div>
+              <div class="detail-item">
+                <h4>Salaire moyen</h4>
+                <div class="salary-range">
+                  <span class="salary-min">32 000 €</span>
+                  <div class="salary-bar">
+                    <div class="salary-progress" style="width: 60%;"></div>
+                  </div>
+                  <span class="salary-max">65 000 €</span>
+                </div>
+                <p class="salary-info">Débutant: 32-38k€ | Confirmé: 38-50k€ | Expert: 50-65k€+</p>
+              </div>
+            </div>
+            <a href="#agroalimentaire" class="btn btn-secondary btn-more">En savoir plus</a>
+          </div>
+        </div>
+
+        <!-- Spécialité: Télécommunications -->
+        <div class="speciality-card" data-categories="numerique">
+          <div class="card-header">
+            <img src="img/illustrations/telecom.svg" alt="Ingénieur Télécommunications">
+            <h3>Ingénieur Télécommunications</h3>
+          </div>
+          <div class="card-content">
+            <p class="card-description">Conception, déploiement et maintenance des systèmes et réseaux de télécommunications, des infrastructures aux applications.</p>
+            <div class="card-details">
+              <div class="detail-item">
+                <h4>Missions principales</h4>
+                <ul>
+                  <li>Conception d'architectures réseau</li>
+                  <li>Déploiement d'infrastructures télécoms</li>
+                  <li>Développement de systèmes de communication</li>
+                  <li>Support et maintenance</li>
+                </ul>
+              </div>
+              <div class="detail-item">
+                <h4>Compétences clés</h4>
+                <div class="skills-tags">
+                  <span class="tag">Réseaux IP</span>
+                  <span class="tag">5G/Fibre</span>
+                  <span class="tag">IoT</span>
+                  <span class="tag">Protocoles réseau</span>
+                  <span class="tag">Systèmes embarqués</span>
+                  <span class="tag">Sécurité</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <h4>Environnement de travail</h4>
+                <p>Opérateurs télécoms, équipementiers, ESN, startups, services informatiques des entreprises. Travail en équipe internationale, veille technologique permanente.</p>
+              </div>
+              <div class="detail-item">
+                <h4>Salaire moyen</h4>
+                <div class="salary-range">
+                  <span class="salary-min">35 000 €</span>
+                  <div class="salary-bar">
+                    <div class="salary-progress" style="width: 64%;"></div>
+                  </div>
+                  <span class="salary-max">75 000 €</span>
+                </div>
+                <p class="salary-info">Débutant: 35-40k€ | Confirmé: 42-55k€ | Expert: 55-75k€+</p>
+              </div>
+            </div>
+            <a href="#telecom" class="btn btn-secondary btn-more">En savoir plus</a>
+          </div>
+        </div>
+
+        <!-- Spécialité: Biomédical -->
+        <div class="speciality-card" data-categories="vivant">
+          <div class="card-header">
+            <img src="img/illustrations/biomedical.svg" alt="Ingénieur Biomédical">
+            <h3>Ingénieur Biomédical</h3>
+          </div>
+          <div class="card-content">
+            <p class="card-description">Conception, développement et maintenance d'équipements et dispositifs médicaux au service de la santé.</p>
+            <div class="card-details">
+              <div class="detail-item">
+                <h4>Missions principales</h4>
+                <ul>
+                  <li>Conception de dispositifs médicaux</li>
+                  <li>Validation et certification</li>
+                  <li>Installation et maintenance d'équipements</li>
+                  <li>Conseil aux équipes médicales</li>
+                </ul>
+              </div>
+              <div class="detail-item">
+                <h4>Compétences clés</h4>
+                <div class="skills-tags">
+                  <span class="tag">Biomécanique</span>
+                  <span class="tag">Électronique médicale</span>
+                  <span class="tag">Imagerie</span>
+                  <span class="tag">Biomatériaux</span>
+                  <span class="tag">Normes médicales</span>
+                  <span class="tag">Anatomie</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <h4>Environnement de travail</h4>
+                <p>Fabricants de dispositifs médicaux, hôpitaux, laboratoires de recherche, startups e-santé. Interface entre mondes médical et technique.</p>
+              </div>
+              <div class="detail-item">
+                <h4>Salaire moyen</h4>
+                <div class="salary-range">
+                  <span class="salary-min">34 000 €</span>
+                  <div class="salary-bar">
+                    <div class="salary-progress" style="width: 62%;"></div>
+                  </div>
+                  <span class="salary-max">70 000 €</span>
+                </div>
+                <p class="salary-info">Débutant: 34-40k€ | Confirmé: 40-55k€ | Expert: 55-70k€+</p>
+              </div>
+            </div>
+            <a href="#biomedical" class="btn btn-secondary btn-more">En savoir plus</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quiz" class="quiz-section">
+    <div class="container">
+      <h2>Quel type d'ingénieur êtes-vous ?</h2>
+      <p class="section-intro">Répondez à notre quiz interactif pour découvrir les spécialités d'ingénieur qui correspondent le mieux à votre profil, vos compétences et vos centres d'intérêt.</p>
+      
+      <div id="quiz-container" class="quiz-container">
+        <!-- Le contenu du quiz sera généré par JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials-section">
+    <div class="container">
+      <h2>Témoignages d'ingénieurs</h2>
+      <div class="testimonials-container">
+        <div class="testimonial-card active">
+          <div class="testimonial-image">
+            <img src="img/photos/testimonial-4.jpg" alt="Pierre Dubois">
+          </div>
+          <div class="testimonial-content">
+            <p>"J'ai choisi l'ingénierie informatique pour contribuer à la transformation numérique des entreprises. Mon quotidien est rythmé par des défis techniques variés, du développement à l'architecture de solutions. Ce que j'apprécie le plus, c'est la diversité des projets et l'évolution constante des technologies."</p>
+            <div class="testimonial-author">
+              <h4>Pierre Dubois</h4>
+              <p>Ingénieur en informatique, 5 ans d'expérience</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-image">
+            <img src="img/photos/testimonial-5.jpg" alt="Lucie Nguyen">
+          </div>
+          <div class="testimonial-content">
+            <p>"En tant qu'ingénieure en environnement, je travaille sur des projets qui ont un impact concret sur la transition écologique. Étudier les impacts environnementaux et proposer des solutions durables est très gratifiant. C'est un secteur en pleine expansion où les défis sont à la hauteur des enjeux planétaires."</p>
+            <div class="testimonial-author">
+              <h4>Lucie Nguyen</h4>
+              <p>Ingénieure en environnement, 8 ans d'expérience</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-image">
+            <img src="img/photos/testimonial-6.jpg" alt="Mehdi Benaissa">
+          </div>
+          <div class="testimonial-content">
+            <p>"L'aéronautique a toujours été ma passion, et devenir ingénieur dans ce domaine a été le meilleur choix de ma carrière. Travailler sur la conception d'avions plus économes en carburant est extrêmement stimulant. C'est un secteur exigeant qui demande rigueur et créativité, mais qui offre des perspectives passionnantes."</p>
+            <div class="testimonial-author">
+              <h4>Mehdi Benaissa</h4>
+              <p>Ingénieur en aéronautique, 12 ans d'expérience</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-image">
+            <img src="img/photos/testimonial-7.jpg" alt="Camille Lefèvre">
+          </div>
+          <div class="testimonial-content">
+            <p>"Mon parcours d'ingénieure en génie biomédical me permet de contribuer directement à l'amélioration des soins de santé. Développer des dispositifs médicaux innovants qui aident les patients est extrêmement valorisant. C'est un domaine qui combine technicité et dimension humaine, ce qui en fait sa richesse."</p>
+            <div class="testimonial-author">
+              <h4>Camille Lefèvre</h4>
+              <p>Ingénieure biomédicale, 7 ans d'expérience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-controls">
+        <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+        <div class="testimonial-dots">
+          <span class="dot active" data-testimonial="0"></span>
+          <span class="dot" data-testimonial="1"></span>
+          <span class="dot" data-testimonial="2"></span>
+          <span class="dot" data-testimonial="3"></span>
+        </div>
+        <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="metiers-emergents" id="emergents">
+    <div class="container">
+      <h2>Les métiers d'ingénieur émergents</h2>
+      <p class="section-intro">L'évolution rapide des technologies et les nouveaux défis sociétaux font émerger de nouvelles spécialités d'ingénieur. Découvrez ces métiers d'avenir qui façonneront le monde de demain.</p>
+      
+      <div class="emergent-grid">
+        <div class="emergent-card">
+          <div class="card-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3>Ingénieur en Intelligence Artificielle</h3>
+          <p>Conception et développement d'algorithmes et de systèmes d'IA pour divers secteurs : santé, finance, industrie, etc.</p>
+          <ul class="emergent-details">
+            <li><strong>Focus actuels :</strong> Machine learning, deep learning, vision par ordinateur, traitement du langage naturel</li>
+            <li><strong>Secteurs recruteurs :</strong> Tech, R&D, automobile, finance, santé</li>
+            <li><strong>Compétences clés :</strong> Programmation (Python, R), mathématiques, data science, algorithmique</li>
+          </ul>
+          <div class="growth-indicator">
+            <span class="growth-label">Croissance du secteur</span>
+            <div class="growth-bar">
+              <div class="growth-fill" style="width: 95%;"></div>
+            </div>
+            <span class="growth-value">Très forte</span>
+          </div>
+        </div>
+        
+        <div class="emergent-card">
+          <div class="card-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3>Ingénieur en Économie Circulaire</h3>
+          <p>Conception de systèmes et processus visant à optimiser l'utilisation des ressources et minimiser les déchets.</p>
+          <ul class="emergent-details">
+            <li><strong>Focus actuels :</strong> Écoconception, valorisation des déchets, analyse de cycle de vie, symbiose industrielle</li>
+            <li><strong>Secteurs recruteurs :</strong> Environnement, recyclage, industrie, collectivités</li>
+            <li><strong>Compétences clés :</strong> Analyse de cycle de vie, génie des procédés, écoconception, réglementation environnementale</li>
+          </ul>
+          <div class="growth-indicator">
+            <span class="growth-label">Croissance du secteur</span>
+            <div class="growth-bar">
+              <div class="growth-fill" style="width: 85%;"></div>
+            </div>
+            <span class="growth-value">Forte</span>
+          </div>
+        </div>
+        
+        <div class="emergent-card">
+          <div class="card-icon">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <h3>Ingénieur en Quantique</h3>
+          <p>Développement et application des technologies quantiques pour le calcul, la cryptographie et les capteurs de nouvelle génération.</p>
+          <ul class="emergent-details">
+            <li><strong>Focus actuels :</strong> Calcul quantique, cryptographie quantique, communications quantiques</li>
+            <li><strong>Secteurs recruteurs :</strong> R&D, défense, informatique, télécommunications</li>
+            <li><strong>Compétences clés :</strong> Physique quantique, mathématiques avancées, programmation spécifique</li>
+          </ul>
+          <div class="growth-indicator">
+            <span class="growth-label">Croissance du secteur</span>
+            <div class="growth-bar">
+              <div class="growth-fill" style="width: 80%;"></div>
+            </div>
+            <span class="growth-value">Forte</span>
+          </div>
+        </div>
+        
+        <div class="emergent-card">
+          <div class="card-icon">
+            <i class="fas fa-dna"></i>
+          </div>
+          <h3>Ingénieur en Biologie de Synthèse</h3>
+          <p>Conception et création de systèmes biologiques nouvelles ou modification de systèmes existants pour diverses applications.</p>
+          <ul class="emergent-details">
+            <li><strong>Focus actuels :</strong> Biocarburants, biomatériaux, médicaments, agriculture de précision</li>
+            <li><strong>Secteurs recruteurs :</strong> Biotechnologie, pharmaceutique, chimie, environnement</li>
+            <li><strong>Compétences clés :</strong> Biologie moléculaire, génie génétique, bioinformatique, modélisation</li>
+          </ul>
+          <div class="growth-indicator">
+            <span class="growth-label">Croissance du secteur</span>
+            <div class="growth-bar">
+              <div class="growth-fill" style="width: 75%;"></div>
+            </div>
+            <span class="growth-value">Forte</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="related-resources">
+    <div class="container">
+      <h2>Ressources complémentaires</h2>
+      <div class="resources-grid">
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3>Formations</h3>
+          <p>Découvrez les parcours de formation pour devenir ingénieur dans différentes spécialités.</p>
+          <a href="formation.html" class="btn-text">Explorer les formations <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-university"></i>
+          </div>
+          <h3>Écoles</h3>
+          <p>Comparez les écoles d'ingénieurs selon vos critères et trouvez celle qui vous correspond.</p>
+          <a href="ecoles.html" class="btn-text">Comparer les écoles <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3>Débouchés</h3>
+          <p>Explorez les perspectives de carrière et les secteurs qui recrutent des ingénieurs.</p>
+          <a href="debouches.html" class="btn-text">Voir les débouchés <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <h3>Entreprises</h3>
+          <p>Découvrez les grandes entreprises qui recrutent des ingénieurs dans chaque spécialité.</p>
+          <a href="debouches.html#entreprises" class="btn-text">Voir les entreprises <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>Restez informé</h2>
+        <p>Inscrivez-vous à notre newsletter pour recevoir les dernières actualités sur les métiers d'ingénieur, les innovations et les opportunités de carrière.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Votre adresse email" required>
+            <button type="submit" class="btn btn-primary">S'inscrire</button>
+          </div>
+          <div class="form-consent">
+            <input type="checkbox" id="consent" required>
+            <label for="consent">J'accepte de recevoir la newsletter et confirme avoir lu la <a href="privacy.html">politique de confidentialité</a></label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="img/logo-white.svg" alt="IngéFutur Logo">
+          <p>Votre guide complet pour une carrière d'ingénieur réussie</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="metiers.html">Métiers</a></li>
+              <li><a href="formation.html">Formation</a></li>
+              <li><a href="ecoles.html">Écoles</a></li>
+              <li><a href="debouches.html">Débouchés</a></li>
+              <li><a href="ressources.html">Ressources</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="emploi.html">Emploi</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Informations</h3>
+            <ul>
+              <li><a href="about.html">À propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="sitemap.html">Plan du site</a></li>
+              <li><a href="legal.html">Mentions légales</a></li>
+              <li><a href="privacy.html">Politique de confidentialité</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Ressources</h3>
+            <ul>
+              <li><a href="ressources.html#guides">Guides de préparation</a></li>
+              <li><a href="ressources.html#outils">Outils d'orientation</a></li>
+              <li><a href="ressources.html#livres">Bibliographie</a></li>
+              <li><a href="ressources.html#liens">Liens utiles</a></li>
+              <li><a href="ressources.html#evenements">Salons et forums</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p><i class="fas fa-envelope"></i> contact@ingefutur.fr</p>
+          <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Avenue des Ingénieurs, 75001 Paris</p>
+          <a href="contact.html" class="btn btn-outline">Nous contacter</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 IngéFutur. Tous droits réservés.</p>
+        <div class="footer-bottom-links">
+          <a href="legal.html">Mentions légales</a>
+          <a href="privacy.html">Politique de confidentialité</a>
+          <a href="sitemap.html">Plan du site</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="back-to-top" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html> €</span>
+                </div>
+                <p class="salary-info">Débutant: 33-39k€ | Confirmé: 40-55k€ | Expert: 55-72k€+</p>
+              </div>
+            </div>
+            <a href="#electrique" class="btn btn-secondary btn-more">En savoir plus</a>
+          </div>
+        </div>
+
+        <!-- Spécialité: Chimique -->
+        <div class="speciality-card" data-categories="industrie vivant">
+          <div class="card-header">
+            <img src="img/illustrations/chimique.svg" alt="Ingénieur Chimiste">
+            <h3>Ingénieur Chimiste</h3>
+          </div>
+          <div class="card-content">
+            <p class="card-description">Conception, optimisation et contrôle de procédés chimiques pour la fabrication de produits dans divers secteurs industriels.</p>
+            <div class="card-details">
+              <div class="detail-item">
+                <h4>Missions principales</h4>
+                <ul>
+                  <li>Développement de procédés chimiques</li>
+                  <li>Formulation de nouveaux produits</li>
+                  <li>Contrôle qualité et analyses</li>
+                  <li>Gestion de la production</li>
+                </ul>
+              </div>
+              <div class="detail-item">
+                <h4>Compétences clés</h4>
+                <div class="skills-tags">
+                  <span class="tag">Procédés chimiques</span>
+                  <span class="tag">Thermodynamique</span>
+                  <span class="tag">Chimie analytique</span>
+                  <span class="tag">Formulation</span>
+                  <span class="tag">Modélisation</span>
+                  <span class="tag">HSE</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <h4>Environnement de travail</h4>
+                <p>Industries chimique, pharmaceutique, cosmétique, agroalimentaire, centres R&D, laboratoires d'analyse. Travail en laboratoire et en production.</p>
+              </div>
+              <div class="detail-item">
+                <h4>Salaire moyen</h4>
+                <div class="salary-range">
+                  <span class="salary-min">34 000 €</span>
+                  <div class="salary-bar">
+                    <div class="salary-progress" style="width: 61%;"></div>
+                  </div>
+                  <span class="salary-max">68 000 €</span>
+                </div>
+                <p class="salary-info">Débutant: 34-40k€ | Confirmé: 40-55k€ | Expert: 55-68k€+</p>
+              </div>
+            </div>
+            <a href="#chimique" class="btn btn-secondary btn-more">En savoir plus</a>
+          </div>
+        </div>
+
+        <!-- Spécialité: Environnement -->
+        <div class="speciality-card" data-categories="environnement">
+          <div class="card-header">
+            <img src="img/illustrations/environnement.svg" alt="Ingénieur Environnement">
+            <h3>Ingénieur Environnement</h3>
+          </div>
+          <div class="card-content">
+            <p class="card-description">Conception et mise en œuvre de solutions pour préserver l'environnement, gérer les ressources naturelles et limiter les impacts des activités humaines.</p>
+            <div class="card-details">
+              <div class="detail-item">
+                <h4>Missions principales</h4>
+                <ul>
+                  <li>Études d'impact environnemental</li>
+                  <li>Gestion des déchets et effluents</li>
+                  <li>Dépollution des sols et des eaux</li>
+                  <li>Certification environnementale</li>
+                </ul>
+              </div>
+              <div class="detail-item">
+                <h4>Compétences clés</h4>
+                <div class="skills-tags">
+                  <span class="tag">Écologie</span>
+                  <span class="tag">Traitement des eaux</span>
+                  <span class="tag">Gestion des déchets</span>
+                  <span class="tag">Réglementation</span>
+                  <span class="tag">Analyse de cycle de vie</span>
+                  <span class="tag">RSE</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <h4>Environnement de travail</h4>
+                <p>Bureaux d'études, collectivités territoriales, industries, organismes publics, associations. Alternance entre bureau et terrain, travail multidisciplinaire.</p>
+              </div>
+              <div class="detail-item">
+                <h4>Salaire moyen</h4>
+                <div class="salary-range">
+                  <span class="salary-min">30 000 €</span>
+                  <div class="salary-bar">
+                    <div class="salary-progress" style="width: 58%;"></div>
+                  </div>
+                  <span class="salary-max">65 000 €</span>
+                </div>
+                <p class="salary-info">Débutant: 30-36k€ | Confirmé: 38-50k€ | Expert: 50-65k€+</p>
+              </div>
+            </div>
+            <a href="#environnement" class="btn btn-secondary btn-more">En savoir plus</a>
+          </div>
+        </div>
+
+        <!-- Spécialité: Énergie -->
+        <div class="speciality-card" data-categories="environnement">
+          <div class="card-header">
+            <img src="img/illustrations/energie.svg" alt="Ingénieur Énergie">
+            <h3>Ingénieur en Énergie</h3>
+          </div>
+          <div class="card-content">
+            <p class="card-description">Conception, optimisation et gestion de systèmes de production, distribution et consommation d'énergie, avec un focus croissant sur les énergies renouvelables.</p>
+            <div class="card-details">
+              <div class="detail-item">
+                <h4>Missions principales</h4>
+                <ul>
+                  <li>Conception d'installations énergétiques</li>
+                  <li>Efficacité énergétique</li>
+                  <li>Développement de projets EnR</li>
+                  <li>Audit énergétique</li>
+                </ul>
+              </div>
+              <div class="detail-item">
+                <h4>Compétences clés</h4>
+                <div class="skills-tags">
+                  <span class="tag">Thermique</span>
+                  <span class="tag">Solaire/Éolien</span>
+                  <span class="tag">Réseaux énergétiques</span>
+                  <span class="tag">Smart grids</span>
+                  <span class="tag">Efficacité énergétique</span>
+                  <span class="tag">Modélisation</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <h4>Environnement de travail</h4>
+                <p>Producteurs d'énergie, bureaux d'études, développeurs EnR, industries, collectivités. Projets d'envergure internationale, approche systémique des problématiques.</p>
+              </div>
+              <div class="detail-item">
+                <h4>Salaire moyen</h4>
+                <div class="salary-range">
+                  <span class="salary-min">33 000 €</span>
+                  <div class="salary-bar">
+                    <div class="salary-progress" style="width: 64%;"></div>
+                  </div>
+                  <span class="salary-max">72 000
